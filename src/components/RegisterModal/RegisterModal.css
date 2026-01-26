@@ -1,0 +1,27 @@
+/* RegisterModal uses the shared modal styles from ModalWithForm.css */
+/* Override close button position for register modal */
+
+.modal.modal_register .modal__close {
+  position: absolute;
+  top: -46px;
+  right: -6px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 1001;
+}
+
+@media (max-width: 624px) {
+  .modal.modal_register .modal__close {
+    position: fixed;
+    top: -40px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    left: auto;
+    bottom: auto;
+  }
+}
