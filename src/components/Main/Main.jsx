@@ -1,3 +1,4 @@
+import React from "react";
 import "./Main.css";
 import NotFound from "../../assets/not-found.svg";
 

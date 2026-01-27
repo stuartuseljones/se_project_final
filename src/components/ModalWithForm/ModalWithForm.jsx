@@ -1,3 +1,4 @@
+import React from "react";
 import "./ModalWithForm.css";
 import closeButton from "../../assets/closebutton.svg";
 
@@ -28,8 +29,8 @@ function ModalWithForm({
         <h2 className="modal__title">{title}</h2>
         <form className="modal__form" onSubmit={onSubmit} name={name}>
           {children}
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className={`modal__submit-button ${isValid ? "modal__submit-button_enabled" : ""}`}
             disabled={!isValid}
           >

@@ -1,3 +1,4 @@
+import React from "react";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import "./LoginModal.css";
 import { useState } from "react";
@@ -22,7 +23,8 @@ function LoginModal({ isOpen, onClose, onSubmit, onSwitchToRegister }) {
   const [password, setPassword] = useState("");
 
   // Validation logic
-  const isValidEmail = email.includes('@') && email.includes('.') && email.length > 5;
+  const isValidEmail =
+    email.includes("@") && email.includes(".") && email.length > 5;
   const isValidPassword = password.length >= 6;
   const isFormValid = isValidEmail && isValidPassword;
 

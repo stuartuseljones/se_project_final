@@ -1,3 +1,4 @@
+import React from "react";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import "./RegisterModal.css";
 import { useState } from "react";
@@ -8,7 +9,8 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
   const [username, setUsername] = useState("");
 
   // Validation logic
-  const isValidEmail = email.includes('@') && email.includes('.') && email.length > 5;
+  const isValidEmail =
+    email.includes("@") && email.includes(".") && email.length > 5;
   const isValidPassword = password.length >= 6;
   const isValidUsername = username.length >= 2;
   const isFormValid = isValidEmail && isValidPassword && isValidUsername;

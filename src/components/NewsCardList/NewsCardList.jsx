@@ -1,3 +1,4 @@
+import React from "react";
 import "./newsCardList.css";
 import NewsCard from "../NewsCard/NewsCard.jsx";
 
