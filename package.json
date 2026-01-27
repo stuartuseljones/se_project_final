@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite --open",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d dist",
