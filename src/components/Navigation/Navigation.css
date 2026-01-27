@@ -167,7 +167,32 @@
   padding: 0;
 }
 
+.navbar__menu-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar__menu-button img[src*="closebutton"] {
+  filter: invert(1);
+}
+
 .navbar__menu-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__close-button {
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  filter: invert(1);
+  border-style: none;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+.navbar__close-icon {
   width: 100%;
   height: 100%;
 }
@@ -206,6 +231,11 @@
     width: calc(100% - 16px);
   }
 
+  /* Invert title color when mobile menu is open */
+  .navbar:has(.navbar__mobile-menu) .navbar__title {
+    color: rgba(255, 255, 255, 1) !important;
+  }
+
   /* Hide all navigation buttons */
   .navbar__home--logged-out,
   .navbar__home--logged-in,
@@ -223,6 +253,26 @@
     right: 16px;
     z-index: 1003;
     background-color: transparent;
+  }
+
+  /* Style close button when menu is open - ensure it's visible above the menu */
+  .navbar:has(.navbar__mobile-menu) .navbar__menu-button {
+    z-index: 1005 !important;
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important;
+    display: block !important;
+  }
+
+  /* When menu is open, make the icon white/inverted */
+  .navbar:has(.navbar__mobile-menu) .navbar__menu-icon {
+    filter: invert(1) !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .navbar:has(.navbar__mobile-menu) .navbar__menu-icon--light {
+    filter: invert(1) !important;
   }
 
   .navbar__menu-icon {
@@ -243,6 +293,9 @@
     height: 100vh;
     z-index: 1000;
     background: transparent;
+  }
+  .navbar:has(.navbar__mobile-menu) .navbar__menu-button img {
+    filter: invert(1) !important;
   }
 }
 

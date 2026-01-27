@@ -1,8 +1,6 @@
 # News Explorer
 
-News Explorer
-
-Well well well we have done it: the The News App is complete.
+News Explorer Web App
 
 ## Overview
 
@@ -10,7 +8,23 @@ News Explorer is an application that allows users to search for articles by keyw
 
 ## Video Overview
 
+https://www.loom.com/share/52653e9eb2874ee6baebcdad093dea8c
+
 ## Screenshots
+
+_Homepage view on desktop._
+![alt text](src/assets/main_desktop1.png)
+![alt text](src/assets/Main_Desktop2.png)
+_Homepage Sign In modal on desktop._
+![alt text](src/assets/Desktopmain3.png)
+
+_Saved News view on desktop._
+![alt text](src/assets/saved_desk1.png)
+
+_Saved News view on mobile._
+![alt text](src/assets/saved_mobile2.png)
+_Saved News menu on mobile._
+![alt text](src/assets/saved_menu.png)
 
 ## Features
 

@@ -75,9 +75,14 @@ function Navigation({
             className={
               !isMainPage ? "navbar__menu-icon--light" : "navbar__menu-icon"
             }
-            src={isMobileMenuOpen ? CloseIcon : MenuIcon}
-            alt={isMobileMenuOpen ? "close" : "menu"}
+            src={MenuIcon}
+            alt={"menu"}
           />
+          {isMobileMenuOpen && (
+            <button className="navbar__close-button">
+              <img className="navbar__close-icon" src={CloseIcon} alt="close" />
+            </button>
+          )}
         </button>
       </div>
 
