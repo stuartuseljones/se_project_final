@@ -1,3 +1,5 @@
+import { NEWS_API_KEY } from "./constants";
+
 class NewsApi {
   constructor() {
     this._baseUrl =

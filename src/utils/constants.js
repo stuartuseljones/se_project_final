@@ -1,1 +1,1 @@
-export const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+export const NEWS_API_KEY = "8d5aed65351c437395b254683729dc7f";
