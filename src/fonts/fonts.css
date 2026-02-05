@@ -1,0 +1,243 @@
+/* Inter */
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("./inter-400-regular.woff2") format("woff2"),
+    url("./inter-400-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("./inter-500.woff2") format("woff2"),
+    url("./inter-500.woff") format("woff");
+  font-display: swap;
+}
+
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("./roboto-400-regular.woff2") format("woff2"),
+    url("./roboto-400-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("./roboto-500.woff2") format("woff2"),
+    url("./roboto-500.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("./roboto-700.woff2") format("woff2"),
+    url("./roboto-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-style: normal;
+  src:
+    url("./roboto-900.woff2") format("woff2"),
+    url("./roboto-900.woff") format("woff");
+  font-display: swap;
+}
+
+/* Roboto Slab */
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("./roboto-slab-400-regular.woff2") format("woff2"),
+    url("./roboto-slab-400-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("./roboto-slab-700.woff2") format("woff2"),
+    url("./roboto-slab-700.woff") format("woff");
+  font-display: swap;
+}
+
+/* Source Sans 3 (Source Sans Pro) */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 200;
+  font-style: normal;
+  src:
+    url("./SourceSans3-ExtraLight.woff2") format("woff2"),
+    url("./SourceSans3-ExtraLight.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 200;
+  font-style: italic;
+  src:
+    url("./SourceSans3-ExtraLightItalic.woff2") format("woff2"),
+    url("./SourceSans3-ExtraLightItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url("./SourceSans3-Light.woff2") format("woff2"),
+    url("./SourceSans3-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: italic;
+  src:
+    url("./SourceSans3-LightItalic.woff2") format("woff2"),
+    url("./SourceSans3-LightItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("./SourceSans3-Regular.woff2") format("woff2"),
+    url("./SourceSans3-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: italic;
+  src:
+    url("./SourceSans3-Italic.woff2") format("woff2"),
+    url("./SourceSans3-Italic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("./SourceSans3-Medium.woff2") format("woff2"),
+    url("./SourceSans3-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  font-style: italic;
+  src:
+    url("./SourceSans3-MediumItalic.woff2") format("woff2"),
+    url("./SourceSans3-MediumItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-style: normal;
+  src:
+    url("./SourceSans3-SemiBold.woff2") format("woff2"),
+    url("./SourceSans3-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-style: italic;
+  src:
+    url("./SourceSans3-SemiBoldItalic.woff2") format("woff2"),
+    url("./SourceSans3-SemiBoldItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("./SourceSans3-Bold.woff2") format("woff2"),
+    url("./SourceSans3-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: italic;
+  src:
+    url("./SourceSans3-BoldItalic.woff2") format("woff2"),
+    url("./SourceSans3-BoldItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 800;
+  font-style: normal;
+  src:
+    url("./SourceSans3-ExtraBold.woff2") format("woff2"),
+    url("./SourceSans3-ExtraBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 800;
+  font-style: italic;
+  src:
+    url("./SourceSans3-ExtraBoldItalic.woff2") format("woff2"),
+    url("./SourceSans3-ExtraBoldItalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  font-style: normal;
+  src:
+    url("./SourceSans3-Black.woff2") format("woff2"),
+    url("./SourceSans3-Black.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  font-style: italic;
+  src:
+    url("./SourceSans3-BlackItalic.woff2") format("woff2"),
+    url("./SourceSans3-BlackItalic.woff") format("woff");
+  font-display: swap;
+}
