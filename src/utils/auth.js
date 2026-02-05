@@ -1,5 +1,5 @@
-export const authorize = (email, password) => {
-  return new Promise((resolve, reject) => {
+export const authorize = () => {
+  return new Promise((resolve) => {
     // simulate network delay
     setTimeout(() => {
       resolve({ token: "fake-jwt-token" });
@@ -7,8 +7,8 @@ export const authorize = (email, password) => {
   });
 };
 
-export const checkToken = (token) => {
-  return new Promise((resolve, reject) => {
+export const checkToken = () => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
         data: {

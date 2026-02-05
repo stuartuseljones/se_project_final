@@ -1,8 +1,7 @@
-import React from "react";
 import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { authorize, checkToken } from "../../utils/auth.js";
-import { getItems, saveArticle, deleteArticle } from "../../utils/api.js";
+import { getItems } from "../../utils/api.js";
 import { useEffect } from "react";
 
 //Component imports
@@ -18,7 +17,6 @@ import newsApi from "../../utils/NewsApi.js";
 
 import LoginModal from "../LoginModal/LoginModal.jsx";
 import RegisterModal from "../RegisterModal/RegisterModal.jsx";
-import Preloader from "../Preloader/Preloader.jsx";
 
 import "./App.css";
 
@@ -68,24 +66,6 @@ function App() {
       });
   };
 
-  // Save article handler
-  function handleSaveArticle(article) {
-    saveArticle(article)
-      .then((saved) => {
-        setSavedArticles((prev) => [saved, ...prev]);
-      })
-      .catch(console.error);
-  }
-
-  // Delete article handler
-  function handleDeleteArticle(id) {
-    deleteArticle(id)
-      .then(() => {
-        setSavedArticles((prev) => prev.filter((a) => a._id !== id));
-      })
-      .catch(console.error);
-  }
-
   // Login handler
   function handleLogin(email, password) {
     setHasError(false);
@@ -107,7 +87,7 @@ function App() {
   }
 
   // Register handler
-  function handleRegister(email, password, username) {
+  function handleRegister() {
     setHasError(false);
 
     // Simulate registration (you can enhance this later)
@@ -223,6 +203,7 @@ function App() {
                   isArticleSaved={isArticleSaved}
                   onSignInClick={handleSignInClick}
                 />
+                <About />
               </>
             }
           />
@@ -251,7 +232,6 @@ function App() {
           />
         </Routes>
         {/* <Preloader /> */}
-        <About />
         <Footer />
       </div>
       <LoginModal

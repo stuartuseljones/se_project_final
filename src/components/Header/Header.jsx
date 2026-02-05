@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 
 //component imports
@@ -32,7 +31,7 @@ function Header({
         <div className="header__content">
           <div className="header__text-container">
             <h1 className="header__title">
-              What's going on in <br />
+              What&apos;s going on in <br />
               the world?
             </h1>
             <p className="header__subtitle">

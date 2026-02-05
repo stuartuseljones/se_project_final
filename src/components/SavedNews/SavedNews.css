@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 16px;
-  margin: 64px 104px;
+  margin: 0 104px;
 }
 
 .saved-news__keywords-prompt {
@@ -44,6 +44,11 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.saved-news__content {
+  background-color: #f5f6f7;
+  padding: 62px 0 62px 0;
 }
 
 @media (max-width: 1023px) {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./SavedNews.css";
 import NewsCard from "../NewsCard/NewsCard";
 
@@ -33,7 +32,7 @@ function SavedNews({ articles, currentUser, onDeleteArticle }) {
   return (
     <div className="saved-news">
       <div className="saved-news__header">
-        <p className="saved-news__title">Saved articles</p>
+        <h1 className="saved-news__title">Saved articles</h1>
         <div className="saved-news__subtitle">
           {currentUser?.name || "User"}, you have {articles.length} saved
           article{articles.length !== 1 ? "s" : ""}
@@ -75,7 +74,7 @@ function SavedNews({ articles, currentUser, onDeleteArticle }) {
       )}
       {articles.length === 0 && (
         <div className="saved-news__no-articles">
-          <p>You haven't saved any articles yet.</p>
+          <p>You haven&apos;t saved any articles yet.</p>
         </div>
       )}
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Navigation.css";
 
 import LogoutIcon from "../../assets/logout.svg";
@@ -22,14 +21,14 @@ function Navigation({
   };
 
   return (
-    <div
+    <nav
       className={`navbar ${!isMainPage && isLoggedIn ? "navbar--logged-in" : "navbar--logged-out"}`}
     >
-      <div
+      <h1
         className={`navbar__title ${isLoggedIn && !isMainPage ? "navbar__title--logged-in" : "navbar__title--logged-out"}`}
       >
         NewsExplorer
-      </div>
+      </h1>
       <div className="navbar__links">
         <Link
           to="/"
@@ -143,7 +142,7 @@ function Navigation({
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 }
 

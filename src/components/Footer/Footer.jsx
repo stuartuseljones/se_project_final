@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 //Asset Imports
@@ -7,15 +7,15 @@ import linkedinIcon from "../../assets/LinkedIn.svg";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__content">
         <p className="footer__text">
           © 2026 Stuart Useldinger Jones, Powered by News API
         </p>
         <div className="footer__links">
-          <a href="#" className="footer__link-text">
+          <Link to="/" className="footer__link-text">
             Home
-          </a>
+          </Link>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -44,7 +44,7 @@ function Footer() {
           </a>
         </div>{" "}
       </div>
-    </div>
+    </footer>
   );
 }
 

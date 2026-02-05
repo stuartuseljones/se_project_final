@@ -253,10 +253,25 @@ ol {
 @media (max-width: 1023px) {
   .news-card {
     width: 100%;
-    height: auto;
+    height: 420px;
   }
 
   .news-card__image {
-    height: auto;
+    max-height: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 495px) {
+  .news-card {
+    height: 440px;
+    width: 100%;
+  }
+
+  .news-card__image {
+    max-height: 196px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 }

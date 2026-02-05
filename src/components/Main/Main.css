@@ -56,6 +56,13 @@
   background-color: rgba(232, 232, 232, 1);
 }
 
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .main__newscards-list {
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1023px) {
   .main__header {
     padding: 80px 16px 56px 16px;

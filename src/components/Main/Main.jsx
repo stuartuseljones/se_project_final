@@ -1,4 +1,3 @@
-import React from "react";
 import "./Main.css";
 import NotFound from "../../assets/not-found.svg";
 
@@ -12,7 +11,6 @@ function Main({
   isLoading,
   searchKeyword,
   hasError,
-  savedArticles,
   onSaveArticle,
   onDeleteArticle,
   isLoggedIn,
@@ -29,9 +27,6 @@ function Main({
   const hasMore = visibleCount < articles.length;
   const hasSearched = searchKeyword && searchKeyword.length > 0;
   const hasResults = articles.length > 0;
-
-  // Helper function to check if an article is saved
-  const isSaved = (article) => isArticleSaved(article);
 
   return (
     <main className="main">
@@ -58,7 +53,7 @@ function Main({
       {/* Results Found State */}
       {!isLoading && hasResults && (
         <div className="main__container">
-          <div className="main__title">Search results</div>
+          <h1 className="main__title">Search results</h1>
           <ul className="main__newscards-list">
             {articles.slice(0, visibleCount).map((article, index) => (
               <li key={index}>
@@ -86,7 +81,7 @@ function Main({
       {/* Error State */}
       {!isLoading && hasError && (
         <div className="main__container">
-          <div className="main__title">Search results</div>
+          <h1 className="main__title">Search results</h1>
           <div className="main__error-message">
             Sorry, something went wrong during the request. Please try again
             later.

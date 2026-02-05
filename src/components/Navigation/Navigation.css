@@ -167,12 +167,12 @@
   padding: 0;
 }
 
-.navbar__menu-button img {
+.navbar__menu-icon {
   width: 24px;
   height: 24px;
 }
 
-.navbar__menu-button img[src*="closebutton"] {
+.navbar__menu-icon--light {
   filter: invert(1);
 }
 
@@ -294,7 +294,7 @@
     z-index: 1000;
     background: transparent;
   }
-  .navbar:has(.navbar__mobile-menu) .navbar__menu-button img {
+  .navbar:has(.navbar__mobile-menu) .navbar__menu-icon {
     filter: invert(1) !important;
   }
 }

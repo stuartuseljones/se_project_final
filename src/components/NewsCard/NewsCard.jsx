@@ -1,4 +1,3 @@
-import React from "react";
 import "./NewsCard.css";
 
 function NewsCard({
@@ -36,7 +35,7 @@ function NewsCard({
   };
 
   return (
-    <div
+    <article
       className="news-card"
       onClick={() => window.open(article.url, "_blank", "noopener,noreferrer")}
     >
@@ -91,7 +90,7 @@ function NewsCard({
         <p className="news-card__description">{article.description}</p>
         <p className="news-card__source">{article.source.name}</p>
       </div>
-    </div>
+    </article>
   );
 }
 

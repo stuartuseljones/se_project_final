@@ -91,10 +91,30 @@
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 31px;
+  outline: none;
+}
+
+.modal__input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .modal__input::placeholder {
   color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__error {
+  color: #ff0000;
+  font-size: 12px;
+  margin: -24px 0 8px 0;
+  min-height: 16px;
+}
+
+.modal__server-error {
+  color: #ff0000;
+  font-size: 12px;
+  margin: -14px 0 8px 0;
+  text-align: center;
+  visibility: hidden;
 }
 
 .modal__label {

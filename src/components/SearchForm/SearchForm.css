@@ -20,7 +20,12 @@
   line-height: 24px;
   outline: none;
   flex-grow: 1;
+  width: 608px;
   background-color: transparent;
+}
+
+.searchform:has(.searchform__input:focus) {
+  border: 1px solid rgba(47, 113, 229, 1);
 }
 
 .searchform__button {
@@ -60,12 +65,20 @@
     border: none;
   }
 
+  .searchform:has(.searchform__input:focus) {
+    border: none;
+  }
+
   .searchform__input {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid rgba(209, 210, 214, 1);
     border-radius: 100px;
     background-color: white;
+  }
+
+  .searchform__input:focus {
+    border: 1px solid rgba(47, 113, 229, 1);
   }
 
   .searchform__button {

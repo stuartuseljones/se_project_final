@@ -1,4 +1,3 @@
-import React from "react";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import "./RegisterModal.css";
 import { useState } from "react";
@@ -7,6 +6,9 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+  const [emailTouched, setEmailTouched] = useState(false);
+  const [passwordTouched, setPasswordTouched] = useState(false);
+  const [usernameTouched, setUsernameTouched] = useState(false);
 
   // Validation logic
   const isValidEmail =
@@ -14,6 +16,18 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
   const isValidPassword = password.length >= 6;
   const isValidUsername = username.length >= 2;
   const isFormValid = isValidEmail && isValidPassword && isValidUsername;
+
+  // Error messages
+  const emailError =
+    emailTouched && !isValidEmail ? "Invalid email address" : "";
+  const passwordError =
+    passwordTouched && !isValidPassword
+      ? "Password must be at least 6 characters"
+      : "";
+  const usernameError =
+    usernameTouched && !isValidUsername
+      ? "Username must be at least 2 characters"
+      : "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,7 +75,9 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        onBlur={() => setEmailTouched(true)}
       />
+      <span className="modal__error">{emailError}</span>
       <label htmlFor="register-password" className="modal__label">
         Password
       </label>
@@ -73,7 +89,9 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
         required
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        onBlur={() => setPasswordTouched(true)}
       />
+      <span className="modal__error">{passwordError}</span>
       <label htmlFor="register-username" className="modal__label">
         Username
       </label>
@@ -85,7 +103,10 @@ function RegisterModal({ isOpen, onClose, onSubmit, onSwitchToLogin }) {
         required
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        onBlur={() => setUsernameTouched(true)}
       />
+      <span className="modal__error">{usernameError}</span>
+      <span className="modal__server-error">This email is not available</span>
     </ModalWithForm>
   );
 }
